@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <canvas id="gameCanvas" width="480" height="640"></canvas>
+
+    <!-- Overlay cho thông tin -->
+    <div id="overlay">
+        <p id="score">Score: 0</p>
+        <p id="highScore">High Score: 0</p>
+        <button id="startButton">Bắt đầu</button>
+
+         <!-- Form nhập tên (ẩn ban đầu) -->
+        <div id="scoreForm" style="display:none;">
+            <label for="name">Nhập tên:</label>
+            <input type="text" id="name" name="name" value="Anonymous">
+            <button id="submitButton">Gửi điểm</button>
+        </div>
+    </div>
+
+    <script src="static/script.js"></script>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script>
+  Telegram.WebApp.ready(); // Báo cho Telegram rằng app đã sẵn sàng
+</script>
+
+</body>
+</html>
